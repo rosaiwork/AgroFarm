@@ -1,0 +1,148 @@
+/* Базові стилі для мобільної адаптації */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(to bottom, #87CEEB 0%, #98FB98 100%);
+  color: #333;
+  font-size: 16px;
+  line-height: 1.4;
+  /* Заборона зуму на мобільних */
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  /* Покращення тач-взаємодії */
+  touch-action: manipulation;
+}
+
+#root {
+  height: 100%;
+}
+
+/* Стилі для форми входу - мобільно адаптовані */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1rem;
+  text-align: center;
+  background: linear-gradient(to bottom, #87CEEB 0%, #98FB98 100%);
+}
+
+.login-container h1 {
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  margin-bottom: 1rem;
+  color: #2E7D32;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.login-container p {
+  margin-bottom: 2rem;
+  color: #4A4A4A;
+  font-size: clamp(0.9rem, 3vw, 1.1rem);
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 320px;
+}
+
+.login-container input {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  /* Мобільні оптимізації */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.login-container input:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+}
+
+.login-container button {
+  padding: 1rem;
+  background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+  transition: all 0.2s ease;
+  /* Мінімальний розмір для тач-взаємодії */
+  min-height: 48px;
+}
+
+.login-container button:hover {
+  background: linear-gradient(135deg, #45a049 0%, #3d8b40 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(76, 175, 80, 0.4);
+}
+
+.login-container button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(76, 175, 80, 0.3);
+}
+
+/* Загальні утиліти для мобільної адаптації */
+.mobile-container {
+  max-width: 100vw;
+  padding: 0.5rem;
+  margin: 0 auto;
+}
+
+.touch-friendly {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Анімації */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Медіа-запити для різних розмірів екранів */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  
+  .login-container {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .login-container form {
+    max-width: 280px;
+  }
+}

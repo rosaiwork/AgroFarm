@@ -1,0 +1,90 @@
+/* Глобальні стилі для мобільної адаптації */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  /* Мобільні оптимізації */
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  touch-action: manipulation;
+  
+  /* Заборона виділення тексту на мобільних */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  
+  /* Заборона контекстного меню на довгий тап */
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+  
+  /* Покращення скролу */
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Глобальні стилі для кнопок */
+button, input, select, textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+
+/* Заборона зуму при фокусі на input */
+input, select, textarea {
+  font-size: 16px;
+}
+
+/* Стилі для тач-взаємодії */
+.touch-target {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Анімації для мобільних */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Стилі для різних орієнтацій */
+@media screen and (orientation: landscape) and (max-height: 500px) {
+  /* Стилі для ландшафтної орієнтації на маленьких екранах */
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Стилі для дуже маленьких екранів */
+@media screen and (max-width: 320px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Стилі для великих мобільних екранів */
+@media screen and (min-width: 414px) and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Заборона скролу body коли відкрито модальне вікно */
+body.modal-open {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
