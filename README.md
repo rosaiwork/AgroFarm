@@ -4,7 +4,7 @@ A full-featured farming game developed as a Telegram WebApp with TON blockchain 
 
 Dive into an exciting world of farming powered by artificial intelligence.
 
-<img width="1024" height="1536" alt="17 лип  2025 р , 22_40_42" src="https://github.com/user-attachments/assets/323aa497-f0d2-4ae0-8854-77e7047b6792" />
+<img width="333" height="500" alt="2" src="https://github.com/user-attachments/assets/7d00a193-502a-4476-99a6-da4dcc372636" />
 
 Your farm keeps expanding even while you’re away: crops grow relentlessly and pests appear alongside them. To keep your plants alive and healthy, water them regularly and apply pesticides when necessary.
 Sell your harvest on a dynamic market where prices shift in real time, driven by in-game news, so stay alert. 
