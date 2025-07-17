@@ -2,6 +2,8 @@
   
 (beta version)Telegram Game bot: https://t.me/agrofarm_crypto_bot
 
+game website : https://cryptofarm.online
+
 Telegram for quick communication: https://t.me/Rosko_Dorosh
 
 A full-featured farming game developed as a Telegram WebApp with TON blockchain integration and AI functionality.
