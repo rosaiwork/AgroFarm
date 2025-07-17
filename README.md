@@ -1,4 +1,8 @@
   🌱 AgroFarm - Telegram WebApp Farming Game
+  
+(beta version)Telegram Game bot: https://t.me/agrofarm_crypto_bot
+
+Telegram for quick communication: https://t.me/Rosko_Dorosh
 
 A full-featured farming game developed as a Telegram WebApp with TON blockchain integration and AI functionality.
 
@@ -11,7 +15,7 @@ Sell your harvest on a dynamic market where prices shift in real time, driven by
 Combine smart farming practices with trading strategy: buy vegetables at their lowest price and sell at peak demand to maximize profit.
 Move wisely, balance farm care with market speculation, and transform your fields into a high-tech profit empire!
 
-<img width="1536" height="1024" alt="7" src="https://github.com/user-attachments/assets/c02d52bb-f91a-4058-86f2-79cf47bfce07" />
+<img width="500" height="333" alt="71" src="https://github.com/user-attachments/assets/9e4d52be-acef-4f7a-94ed-060fdd564975" />
 
 ## Technologies
 
@@ -77,3 +81,5 @@ Create client/.env file:
 env
 REACT_APP_API_URL=http://localhost:5000/api
 REACT_APP_TON_CONNECT_MANIFEST=http://localhost:3000/tonconnect-manifest.json
+
+Crypto Liga developed by @Rosko_Dorosh ( https://t.me/Rosko_Dorosh ) 
