@@ -19,6 +19,42 @@ Move wisely, balance farm care with market speculation, and transform your field
 
 <img width="500" height="333" alt="71" src="https://github.com/user-attachments/assets/9e4d52be-acef-4f7a-94ed-060fdd564975" />
 
+How Does Artificial Intelligence Work in the Game?
+
+1. AI Newspaper – “Daily Agro News”
+What it is: An AI‐powered editor that publishes a short daily “newspaper” filled with headlines, forecasts, rumors, and scandals from the agricultural world.
+
+How it works: AI analyzes real player actions (what they plant or buy) together with global world parameters and generates three to five relevant news items.
+
+In-game impact: Creates an ever-shifting information backdrop that prompts players to react (buy/sell, insure crops, change plantings), making the world feel alive and unpredictable.
+
+2. Self-Learning Market
+What it is: An economic controller that constantly adjusts prices to keep supply and demand in balance.
+
+How it works: A deep Q-network monitors every player’s inventory and trading history, acts as a market maker, and can inject controlled price volatility.
+
+In-game impact: A highly liquid marketplace with no manual tweaking, opening the door to genuine speculation and coordinated “cartels.”
+
+3. “Butterfly Effect” Global Events
+What it is: Large-scale events—trade wars, plant viruses, pest swarms, droughts—that radically alter the rules of play.
+
+How it works: AI crafts the storyline, while a causal-impact model checks whether the knock-on effects on climate, yields, and prices remain coherent.
+
+In-game impact: Players receive a periodic shake-up every X weeks; they must adapt quickly, rethink strategy, and cooperate to survive.
+
+4. AI Quest-Maker
+What it is: A task dispatcher that issues global quests with meaningful rewards.
+
+How it works: The AI proposes social missions such as:
+
+“Grow 100 tons of tomatoes without pesticides.”
+
+“Form a fertilizer cartel and maintain a monopoly for 7 days.”
+
+“Store more than 100 tons of cucumbers for 5 consecutive days.”
+
+In-game impact: Adds fresh motivation, new cooperative scenarios, and endless replayability—without the need for human scriptwriters.
+
 ## Technologies
 
 ### Frontend
@@ -38,50 +74,5 @@ Move wisely, balance farm care with market speculation, and transform your field
 - **MongoDB** + **Mongoose** - database
 - **OpenAI API** - AI services
 - **CORS** - cross-origin requests
-
-## Installation
-
-### Prerequisites
-- **Node.js** >= 16.0.0
-- **npm** >= 8.0.0
-- **MongoDB** >= 5.0.0
-- **Git**
-
-### Clone Repository
-bash
-git clone https://github.com/rosaiwork/AgroFarm.git
-cd AgroFarm
-
-### Install Dependencies
-bash
-# Install all dependencies (client + server)
-npm run install-all
-
-or separately:
-bash
-# Root dependencies
-npm install
-
-# Client dependencies
-cd client && npm install
-
-# Server dependencies
-cd ../server && npm install
-
-### Configuration
-
-#### Server Setup
-Create server/.env file:
-env
-MONGODB_URI=mongodb://localhost:27017/agrofarm
-PORT=5000
-OPENAI_API_KEY=your_openai_api_key_here
-NODE_ENV=development
-
-#### Client Setup
-Create client/.env file:
-env
-REACT_APP_API_URL=http://localhost:5000/api
-REACT_APP_TON_CONNECT_MANIFEST=http://localhost:3000/tonconnect-manifest.json
 
 Crypto Liga developed by @Rosko_Dorosh ( https://t.me/Rosko_Dorosh ) 
