@@ -74,5 +74,4 @@ In-game impact: Adds fresh motivation, new cooperative scenarios, and endless re
 - **MongoDB** + **Mongoose** - database
 - **OpenAI API** - AI services
 - **CORS** - cross-origin requests
-
-Crypto Liga developed by @Rosko_Dorosh ( https://t.me/Rosko_Dorosh ) 
+developed by @Rosko_Dorosh ( https://t.me/Rosko_Dorosh ) 
